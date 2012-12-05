@@ -1,5 +1,5 @@
 BeerHunt::Application.routes.draw do
-  devise_for :users
+  devise_for :users #rails shortcut for providing lots of routes
 
   root :to => 'static_pages#home'
   match 'about' => 'static_pages#about'
