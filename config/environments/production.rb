@@ -51,6 +51,9 @@ BeerHunt::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
+  # mailer for development
+  config.action_mailer.default_url_options = { :host => 'http://mighty-escarpment-2099.herokuapp.com/' }
+  
   # Enable threaded mode
   # config.threadsafe!
 
